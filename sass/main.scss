@@ -2,12 +2,12 @@
 @import "base/typography";
 @import "base/colors";
 
+@import "helpers/mixins";
+@import "helpers/variables";
+
 @import "components/buttons";
 @import "components/carousel";
 @import "components/navigation";
-
-@import "helpers/mixins";
-@import "helpers/variables";
 
 @import "layout/footer";
 @import "layout/grid";
