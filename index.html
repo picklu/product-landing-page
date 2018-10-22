@@ -9,28 +9,46 @@
 </head>
 <body>
     <header id="header" class="header">
-        <div class="logo-box">
-            <img src="#" alt="My company logo" id="header-img" class="header-img">
+        <div class="header__logo-box">
+            <img src="#" alt="My company logo" id="header-img" class="header__logo-box--img">
+            <span class="header__logo-box--name">Company Name</span>
         </div>
-        <nav id="nav-bar" class="nav">
+        <nav id="nav-bar" class="header__nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">One</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Two</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Three</a></li>
+                <li class="header__nav--item"><a href="#about" class="nav-link">about</a></li>
+                <li class="header__nav--item"><a href="#features" class="nav-link">features</a></li>
+                <li class="header__nav--item"><a href="#pricing" class="nav-link">pricing</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <div id="video" class="video">
-            <video class="video-content" src=""></video>
+        
+        <div class="video">
+            <video id="video" class="video__content" src=""></video>
         </div>
+
         <form action="#" id="form" class="form">
-            <div class="form-field-email">
+            <div class="form-field">
                 <label for="email">Email</label>
-                <input id="email" class="class" type="email">
+                <input id="email" class="form-field__email" type="email" placeholder="email@example.com">
             </div>      
+            <div class="form-field">
+                <input id="submit" class="form-field__btn" type="submit" value="submit">
+            </div>
         </form>
+        
+        <section id="about" class="about">
+
+        </section>
+
+        <section id="features" class="features">
+
+        </section>
+
+        <section id="pricing" class="pricing">
+
+        </section>
 
     </main>
     
