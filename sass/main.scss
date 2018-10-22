@@ -1,19 +1,6 @@
-@import "base/reset";
-@import "base/typography";
-@import "base/colors";
-
-@import "helpers/variables";
-@import "helpers/mixins";
-
-@import "components/buttons";
-@import "components/carousel";
-@import "components/navigation";
-
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/forms";
-
+@import "base/index";
+@import "helpers/index";
+@import "components/index";
+@import "layout/index";
 @import "pages/landing";
-
 @import "themes/primary";

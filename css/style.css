@@ -15,7 +15,22 @@ html {
 body {
   font-weight: 300; }
 
+.header,
 .main {
   margin-left: auto;
   margin-right: auto;
   width: 80%; }
+
+.about,
+.features,
+.pricing {
+  height: 300px; }
+
+.about {
+  background-color: orange; }
+
+.features {
+  background-color: blue; }
+
+.pricing {
+  background-color: aqua; }
