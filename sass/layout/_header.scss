@@ -1,8 +1,41 @@
 .header {
+    background-color: #555555;
     display: flex;
-    padding-top: 3rem;
+    justify-content: space-between;
+    padding: 3rem 0 2rem 0;
 
     &__logo-box {
         display: flex;
+
+        &--name {
+            align-self: flex-end;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__nav {
+        align-self: flex-end;
+
+        &--item {
+            background-color: #00ff00;
+            border-radius: 5px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            & .nav-link {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
     }
 }
