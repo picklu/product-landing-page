@@ -1,8 +1,10 @@
 .header {
     background-color: rgb(155, 153, 153);
+    box-shadow: 0 2px 5px #313030;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3rem 10% 2rem 10%;
+    padding: 2rem 10%;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,36 +12,35 @@
 
     &__logo-box {
         display: flex;
+        flex-wrap: wrap;
+
+        &--img {
+            width: 100px;
+            height: 100px;
+        }
 
         &--name {
             align-self: flex-end;
             font-size: 2.5rem;
+            font-weight: 700;
+            padding-left: 5px;
             text-transform: uppercase;
         }
     }
 
     &__nav {
-        align-self: flex-end;
 
         &--item {
-            background-color: #00ff00;
-            border-radius: 5px;
-            font-size: 2rem;
-            text-transform: uppercase;
-            padding: 5px 10px;
+            color: #222;
 
-            &:not(:last-child) {
-                margin-right: 2rem;
+            &:hover {
+                background-color: #222;
+                color: #eee;
             }
 
-            & .nav-link {
-                text-decoration: none;
+            .nav-link {
+                color: inherit;
             }
         }
-    }
-
-    .nav-list {
-        display: flex;
-        list-style: none;
     }
 }

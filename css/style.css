@@ -11,53 +11,91 @@
   box-sizing: inherit; }
 
 html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 62.5%; }
 
 body {
+  background-color: #bbb;
   box-sizing: border-box;
-  font-weight: 300; }
+  font-weight: 400; }
+
+.nav {
+  align-self: flex-end; }
+  .nav--item {
+    border-radius: 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 10px; }
+    .nav--item:not(:last-child) {
+      margin-right: 2rem; }
+    .nav--item .nav-link {
+      text-decoration: none; }
+  .nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none; }
 
 .logo {
-  display: block;
-  height: 50px;
-  width: 50px; }
+  display: block; }
 
-.main,
-.footer {
+.main {
   margin-left: auto;
   margin-right: auto;
   width: 80%; }
 
 .header {
   background-color: #9b9999;
+  box-shadow: 0 2px 5px #313030;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 3rem 10% 2rem 10%;
+  padding: 2rem 10%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0; }
   .header__logo-box {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
+    .header__logo-box--img {
+      width: 100px;
+      height: 100px; }
     .header__logo-box--name {
       align-self: flex-end;
       font-size: 2.5rem;
+      font-weight: 700;
+      padding-left: 5px;
       text-transform: uppercase; }
-  .header__nav {
-    align-self: flex-end; }
-    .header__nav--item {
-      background-color: #00ff00;
-      border-radius: 5px;
-      font-size: 2rem;
-      text-transform: uppercase;
-      padding: 5px 10px; }
-      .header__nav--item:not(:last-child) {
-        margin-right: 2rem; }
-      .header__nav--item .nav-link {
-        text-decoration: none; }
-  .header .nav-list {
+  .header__nav--item {
+    color: #222; }
+    .header__nav--item:hover {
+      background-color: #222;
+      color: #eee; }
+    .header__nav--item .nav-link {
+      color: inherit; }
+
+.footer {
+  background-color: #333;
+  color: #bbb;
+  font-size: 3rem;
+  padding: 2rem 10% 5rem 10%;
+  display: flex;
+  flex-direction: column; }
+  .footer__logo-box {
+    align-self: center;
+    margin-bottom: 3rem; }
+  .footer__content-box {
     display: flex;
-    list-style: none; }
+    justify-content: space-between; }
+  .footer__nav--item {
+    color: #eee; }
+    .footer__nav--item:hover {
+      background-color: #eee;
+      color: #222;
+      transform: skewX(1.1); }
+    .footer__nav--item .nav-link {
+      color: inherit; }
 
 .about,
 .features,
