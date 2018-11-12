@@ -1,0 +1,40 @@
+.footer {
+    background-color: #333;
+    color: #bbb;
+    font-size: 3rem;
+    padding: 2rem 10% 5rem 10%;
+    display: flex;
+    flex-direction: column;
+
+    &__logo-box {
+        align-self: center;
+        margin-bottom: 3rem;
+        
+    }
+
+    &__content-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+
+        &--item {
+            color: #eee;
+
+            &:hover {
+                background-color: #eee;
+                color: #222;
+                transform: skewX(1.1);
+            }
+
+            .nav-link {
+                color: inherit;
+            }
+        }
+    }
+
+    &__copy {
+
+    }
+}
