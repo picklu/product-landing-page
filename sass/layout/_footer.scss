@@ -8,7 +8,12 @@
 
     &__logo-box {
         align-self: center;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
+
+        &--img {
+            height: 150px;
+            width: 120px;
+        }
         
     }
 
@@ -25,7 +30,6 @@
             &:hover {
                 background-color: #eee;
                 color: #222;
-                transform: skewX(1.1);
             }
 
             .nav-link {

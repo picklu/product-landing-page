@@ -25,7 +25,7 @@ body {
     border-radius: 5px;
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 10px; }
+    padding: 5px 10px; }
     .nav--item:not(:last-child) {
       margin-right: 2rem; }
     .nav--item .nav-link {
@@ -59,8 +59,8 @@ body {
     display: flex;
     flex-wrap: wrap; }
     .header__logo-box--img {
-      width: 100px;
-      height: 100px; }
+      height: 86px;
+      width: 80px; }
     .header__logo-box--name {
       align-self: flex-end;
       font-size: 2.5rem;
@@ -84,7 +84,10 @@ body {
   flex-direction: column; }
   .footer__logo-box {
     align-self: center;
-    margin-bottom: 3rem; }
+    margin-bottom: 5rem; }
+    .footer__logo-box--img {
+      height: 150px;
+      width: 120px; }
   .footer__content-box {
     display: flex;
     justify-content: space-between; }
@@ -92,8 +95,7 @@ body {
     color: #eee; }
     .footer__nav--item:hover {
       background-color: #eee;
-      color: #222;
-      transform: skewX(1.1); }
+      color: #222; }
     .footer__nav--item .nav-link {
       color: inherit; }
 
