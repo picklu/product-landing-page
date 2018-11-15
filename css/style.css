@@ -99,6 +99,15 @@ body {
     .footer__nav--item .nav-link {
       color: inherit; }
 
+.video {
+  background-color: #888;
+  margin: 15rem 0 5rem 0;
+  width: 100%; }
+  .video__content {
+    display: block;
+    margin: 0 auto;
+    width: 70%; }
+
 .about,
 .features,
 .pricing {

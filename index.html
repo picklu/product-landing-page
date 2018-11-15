@@ -10,7 +10,7 @@
 <body>
     <header id="header" class="header">
         <div class="header__logo-box">
-            <img alt="My company logo" id="header-img" class="header__logo-box--img logo" src="img/logo_black_transparent.png">
+            <img alt="My company logo" id="header-img" class="header__logo-box--img logo" src="images/logo_black_transparent.png">
             <span class="header__logo-box--name">greyvals</span>
         </div>
         <nav id="nav-bar" class="nav header__nav">
@@ -25,7 +25,11 @@
     <main class="main">
         
         <div class="video">
-            <video id="video" class="video__content" src=""></video>
+            <!-- The video is from https://videos.pexels.com -->
+            <video id="video" class="video__content" autoplay loop controls>
+                <source src="videos/Bubble_Turning_Into_Ice.mp4" type="video/mp4">
+                Your browser does not support the video tag.                       
+            </video>
         </div>
 
         <form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
@@ -54,7 +58,7 @@
     
     <footer class="footer">
         <div class="footer__logo-box">
-            <img alt="My company logo" id="footer-img" class="footer__logo-box--img logo" src="img/logo_white_full_transparent.png">
+            <img alt="My company logo" id="footer-img" class="footer__logo-box--img logo" src="images/logo_white_full_transparent.png">
         </div>
         <div class="footer__content-box">
             <nav class="nav footer__nav">
