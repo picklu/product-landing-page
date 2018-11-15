@@ -19,6 +19,14 @@ body {
   box-sizing: border-box;
   font-weight: 400; }
 
+.btn {
+  border: none;
+  border-radius: 10px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px; }
+
 .nav {
   align-self: flex-end; }
   .nav--item {
@@ -127,6 +135,38 @@ body {
     display: block;
     margin: 0 auto;
     width: 70%; }
+
+.form {
+  font-size: 2.5rem;
+  width: 50%;
+  margin: 3rem auto; }
+  .form-field {
+    display: flex; }
+    .form-field__email, .form-field__btn {
+      flex: 1;
+      font-size: inherit;
+      padding: 5px; }
+    .form-field__btn {
+      background-color: #4d4d4e;
+      box-shadow: 0 0 5px #99999b;
+      color: #eee;
+      margin-top: 2rem; }
+      .form-field__btn:focus {
+        transform: translateY(-3px);
+        outline: none; }
+      .form-field__btn:hover {
+        box-shadow: 0 0 15px #4d4d4e; }
+    .form-field__email {
+      border: 2px solid #4e4d4d;
+      border-radius: 0 10px 10px 0;
+      padding-left: 2rem; }
+      .form-field__email:focus {
+        outline: none; }
+    .form-field .label-for-email {
+      background-color: #4e4d4d;
+      border-radius: 10px 0 0 10px;
+      color: #eee;
+      padding: 5px 2rem; }
 
 .about,
 .features,

@@ -33,7 +33,56 @@
         margin: 0 auto;
         width: 70%;
     }
+}
 
+.form {
+    font-size: 2.5rem;
+    width: 50%;
+    margin: 3rem auto;
+
+    &-field {
+        display: flex;
+
+        &__email,
+        &__btn {
+            flex: 1;
+            font-size: inherit;
+            padding: 5px;
+        }
+
+        &__btn {
+            background-color: darken($color-bluish-grey, 30);
+            box-shadow: 0 0 5px $color-bluish-grey;
+            color: $color-white;
+            margin-top: 2rem;
+
+            &:focus {
+                transform: translateY(-3px);
+                outline: none;
+            }
+
+            &:hover {
+            box-shadow: 0 0 15px darken($color-bluish-grey, 30);
+            }
+        }
+
+        &__email {
+            border: 2px solid darken($color-redish-grey, 30);
+            border-radius: 0 10px 10px 0;
+            padding-left: 2rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .label-for-email {
+            background-color: darken($color-redish-grey, 30);
+            border-radius: 10px 0 0 10px;
+            color: $color-white;
+            padding: 5px 2rem;
+        }
+    }
 }
 
 .about,
