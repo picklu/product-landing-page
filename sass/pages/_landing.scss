@@ -1,6 +1,31 @@
+.title {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 2.5rem;
+    text-indent: 2.5rem;
+    margin-top: 15rem;
+}
+
+.sub-title {
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    text-indent: .3rem;
+    margin-top: 2rem;
+}
+
+.title, .sub-title {
+    color: $color-white;
+    text-align: center;
+    text-shadow: 0 0 10px darken($color-grey, 20);
+    text-transform: uppercase;
+}
+
+
+
 .video {
     background-color: #888;
-    margin: 15rem 0 5rem 0;
+    opacity: 0.5;
+    margin: 5rem 0;
     width: 100%;
 
     &__content {
