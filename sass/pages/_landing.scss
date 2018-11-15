@@ -3,7 +3,7 @@
     font-weight: 700;
     letter-spacing: 2.5rem;
     text-indent: 2.5rem;
-    margin-top: 15rem;
+    margin-top: 18rem;
 }
 
 .sub-title {
@@ -23,8 +23,8 @@
 
 
 .video {
-    background-color: #888;
-    opacity: 0.5;
+    background-color: darken($color-redish-grey, 20);
+    border-radius: 5px;
     margin: 5rem 0;
     width: 100%;
 
