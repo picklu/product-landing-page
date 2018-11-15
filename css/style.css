@@ -46,7 +46,7 @@ body {
 
 .header {
   background-color: #9b9999;
-  box-shadow: 0 2px 5px #313030;
+  box-shadow: 0 2px 5px #4e4d4d;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -68,16 +68,16 @@ body {
       padding-left: 5px;
       text-transform: uppercase; }
   .header__nav--item {
-    color: #222; }
+    color: #000; }
     .header__nav--item:hover {
-      background-color: #222;
+      background-color: #000;
       color: #eee; }
     .header__nav--item .nav-link {
       color: inherit; }
 
 .footer {
-  background-color: #333;
-  color: #bbb;
+  background-color: #000;
+  color: #eee;
   font-size: 3rem;
   padding: 2rem 10% 5rem 10%;
   display: flex;
@@ -99,9 +99,29 @@ body {
     .footer__nav--item .nav-link {
       color: inherit; }
 
+.title {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 2.5rem;
+  text-indent: 2.5rem;
+  margin-top: 15rem; }
+
+.sub-title {
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  text-indent: .3rem;
+  margin-top: 2rem; }
+
+.title, .sub-title {
+  color: #eee;
+  text-align: center;
+  text-shadow: 0 0 10px #222222;
+  text-transform: uppercase; }
+
 .video {
   background-color: #888;
-  margin: 15rem 0 5rem 0;
+  opacity: 0.5;
+  margin: 5rem 0;
   width: 100%; }
   .video__content {
     display: block;

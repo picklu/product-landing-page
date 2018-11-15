@@ -1,6 +1,6 @@
 .header {
-    background-color: rgb(155, 153, 153);
-    box-shadow: 0 2px 5px #313030;
+    background-color: $color-redish-grey;
+    box-shadow: 0 2px 5px darken($color-redish-grey, 30);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -31,11 +31,11 @@
     &__nav {
 
         &--item {
-            color: #222;
+            color: $color-black;
 
             &:hover {
-                background-color: #222;
-                color: #eee;
+                background-color: $color-black;
+                color: $color-white;
             }
 
             .nav-link {
