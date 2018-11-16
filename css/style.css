@@ -128,7 +128,7 @@ body {
 
 .video {
   background-color: #696666;
-  background: linear-gradient(to right, #d5d5d5, #555, #d5d5d5);
+  background: linear-gradient(to right, #d5d5d5, #555, #000, #555, #d5d5d5);
   margin: 3rem 0;
   width: 100%; }
   .video__content {

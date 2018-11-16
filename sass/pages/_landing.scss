@@ -24,7 +24,7 @@
 
 .video {
     background-color: darken($color-redish-grey, 20);
-    background: linear-gradient(to right, darken($color-white, 10), $color-grey, darken($color-white, 10));
+    background: linear-gradient(to right, darken($color-white, 10), $color-grey, $color-black, $color-grey, darken($color-white, 10));
     margin: 3rem 0;
     width: 100%;
 
