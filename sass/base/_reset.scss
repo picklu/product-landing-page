@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #bbb;
+    background-color: darken($color-white, 10);
     box-sizing: border-box;
     font-weight: 400;
 

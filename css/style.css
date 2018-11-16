@@ -15,7 +15,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #bbb;
+  background-color: #d5d5d5;
   box-sizing: border-box;
   font-weight: 400; }
 
@@ -53,8 +53,8 @@ body {
   width: 80%; }
 
 .header {
-  background-color: #9b9999;
-  box-shadow: 0 2px 5px #4e4d4d;
+  background-color: #9c9999;
+  box-shadow: 0 2px 5px #4f4d4d;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -112,24 +112,24 @@ body {
   font-weight: 700;
   letter-spacing: 2.5rem;
   text-indent: 2.5rem;
-  margin-top: 18rem; }
+  margin-top: 15rem; }
 
 .sub-title {
   font-size: 3rem;
   letter-spacing: .3rem;
   text-indent: .3rem;
-  margin-top: 2rem; }
+  margin-top: 1rem; }
 
 .title, .sub-title {
   color: #eee;
   text-align: center;
-  text-shadow: 0 0 10px #222222;
+  text-shadow: 0 0 5px #090909;
   text-transform: uppercase; }
 
 .video {
-  background-color: #686666;
-  border-radius: 5px;
-  margin: 5rem 0;
+  background-color: #696666;
+  background: linear-gradient(to right, #d5d5d5, #555, #d5d5d5);
+  margin: 3rem 0;
   width: 100%; }
   .video__content {
     display: block;
@@ -138,7 +138,7 @@ body {
 
 .form {
   font-size: 2.5rem;
-  width: 50%;
+  width: 60%;
   margin: 3rem auto; }
   .form-field {
     display: flex; }
@@ -147,23 +147,26 @@ body {
       font-size: inherit;
       padding: 5px; }
     .form-field__btn {
-      background-color: #4d4d4e;
-      box-shadow: 0 0 5px #99999b;
+      background-color: #4d4d4f;
+      border: 2px solid #4d4d4f;
+      box-shadow: 0 0 10px #d5d5d5;
       color: #eee;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      transition: all .2s; }
       .form-field__btn:focus {
-        transform: translateY(-3px);
+        transform: translateY(2px);
         outline: none; }
       .form-field__btn:hover {
-        box-shadow: 0 0 15px #4d4d4e; }
+        background-color: #424040;
+        border: 2px solid #424040; }
     .form-field__email {
-      border: 2px solid #4e4d4d;
+      border: 2px solid #4f4d4d;
       border-radius: 0 10px 10px 0;
       padding-left: 2rem; }
       .form-field__email:focus {
         outline: none; }
     .form-field .label-for-email {
-      background-color: #4e4d4d;
+      background-color: #4d4d4f;
       border-radius: 10px 0 0 10px;
       color: #eee;
       padding: 5px 2rem; }

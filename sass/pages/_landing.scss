@@ -3,20 +3,20 @@
     font-weight: 700;
     letter-spacing: 2.5rem;
     text-indent: 2.5rem;
-    margin-top: 18rem;
+    margin-top: 15rem;
 }
 
 .sub-title {
     font-size: 3rem;
     letter-spacing: .3rem;
     text-indent: .3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .title, .sub-title {
     color: $color-white;
     text-align: center;
-    text-shadow: 0 0 10px darken($color-grey, 20);
+    text-shadow: 0 0 5px darken($color-grey, 30);
     text-transform: uppercase;
 }
 
@@ -24,8 +24,8 @@
 
 .video {
     background-color: darken($color-redish-grey, 20);
-    border-radius: 5px;
-    margin: 5rem 0;
+    background: linear-gradient(to right, darken($color-white, 10), $color-grey, darken($color-white, 10));
+    margin: 3rem 0;
     width: 100%;
 
     &__content {
@@ -37,7 +37,7 @@
 
 .form {
     font-size: 2.5rem;
-    width: 50%;
+    width: 60%;
     margin: 3rem auto;
 
     &-field {
@@ -52,17 +52,20 @@
 
         &__btn {
             background-color: darken($color-bluish-grey, 30);
-            box-shadow: 0 0 5px $color-bluish-grey;
+            border: 2px solid darken($color-bluish-grey, 30);
+            box-shadow: 0 0 10px darken($color-white, 10);
             color: $color-white;
             margin-top: 2rem;
+            transition: all .2s;
 
             &:focus {
-                transform: translateY(-3px);
+                transform: translateY(2px);
                 outline: none;
             }
 
             &:hover {
-            box-shadow: 0 0 15px darken($color-bluish-grey, 30);
+                background-color: darken($color-redish-grey, 35);
+                border: 2px solid darken($color-redish-grey, 35);
             }
         }
 
@@ -77,7 +80,7 @@
         }
 
         .label-for-email {
-            background-color: darken($color-redish-grey, 30);
+            background-color: darken($color-bluish-grey, 30);
             border-radius: 10px 0 0 10px;
             color: $color-white;
             padding: 5px 2rem;
