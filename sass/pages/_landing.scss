@@ -20,12 +20,10 @@
     text-transform: uppercase;
 }
 
-
-
 .video {
     background-color: darken($color-redish-grey, 20);
     background: linear-gradient(to right, darken($color-white, 10), $color-grey, $color-black, $color-grey, darken($color-white, 10));
-    margin: 3rem 0;
+    margin: 2rem 0;
     width: 100%;
 
     &__content {
@@ -58,6 +56,10 @@
             margin-top: 2rem;
             transition: all .2s;
 
+            & > span:nth-child(2) {
+                margin-left: 1rem;
+            }
+
             &:focus {
                 transform: translateY(2px);
                 outline: none;
@@ -70,6 +72,7 @@
         }
 
         &__email {
+            background-color: lighten($color-redish-grey, 20);
             border: 2px solid darken($color-redish-grey, 30);
             border-radius: 0 10px 10px 0;
             padding-left: 2rem;
@@ -84,6 +87,13 @@
             border-radius: 10px 0 0 10px;
             color: $color-white;
             padding: 5px 2rem;
+            display: flex;
+
+            &::before {
+                color: inherit;
+                font-size: inherit;
+                margin: auto;
+            }
         }
     }
 }
