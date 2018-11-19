@@ -11,7 +11,7 @@
     <header id="header" class="header">
         <div class="header__logo-box">
             <img alt="My company logo" id="header-img" class="header__logo-box--img logo" src="images/logo_black_transparent.png">
-            <span class="header__logo-box--name">greyvals</span>
+            <span class="header__logo-box--name"><a class="link" href="#">greyvals</a></span>
         </div>
         <nav id="nav-bar" class="nav header__nav">
             <ul class="nav-list">
@@ -23,36 +23,32 @@
     </header>
 
     <main class="main">
-        <h1 class="title">Greyvals</h1>
-        <h2 class="sub-title">is all about grey shades</h2>
-        
-        <div class="video">
-            <!-- The video is from https://videos.pexels.com -->
-            <iframe id="video" class="video__content" width="560" height="315" src="https://www.youtube.com/embed/3qDTkoCB0ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-
-        <form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
-            <div class="form-field">
-                <label for="email" class="label-for-email icon-envelop"></label>
-                <input id="email" class="form-field__email" type="email" name="email" placeholder="email@example.com" required>
-            </div>      
-            <div class="form-field">
-                <button type="submit" id="submit" class="btn form-field__btn"></span><span>Submit</span><span class="icon-compass"></span></button>
+        <section id="about" class="about"><!-- beginning of about -->
+            <h1 class="title">Greyvals</h1>
+            <h2 class="sub-title">is all about grey shades</h2>
+            <div class="video">
+                <!-- The video is from https://videos.pexels.com -->
+                <iframe id="video" class="video__content" width="560" height="315" src="https://www.youtube.com/embed/3qDTkoCB0ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
             </div>
-        </form>
-        
-        <section id="about" class="about">
-            <h2>About</h2>
-        </section>
+            <form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
+                <div class="form-field">
+                    <label for="email" class="label-for-email icon-envelop"></label>
+                    <input id="email" class="form-field__email" type="email" name="email" placeholder="email@example.com" required>
+                </div>      
+                <div class="form-field">
+                    <input type="submit" id="submit" class="btn form-field__btn" value="submit">
+                </div>
+            </form>
+        </section><!-- end of about -->
 
-        <section id="features" class="features">
+        <section id="features" class="features"><!-- beginning of features -->
             <h2>Features</h2>
-        </section>
+        </section><!-- end of features -->
 
-        <section id="pricing" class="pricing">
+        <section id="pricing" class="pricing"><!-- beginning of pricing -->
             <h2>Pricing</h2>
-        </section>
+        </section><!-- end of pricing -->
 
     </main>
     
