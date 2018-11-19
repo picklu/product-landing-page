@@ -101,6 +101,14 @@ body {
       font-weight: 700;
       padding-left: 5px;
       text-transform: uppercase; }
+      .header__logo-box--name .link:link, .header__logo-box--name .link:visited {
+        color: #000;
+        display: inline-block;
+        text-decoration: none; }
+      .header__logo-box--name .link:hover {
+        color: #4d4d4d; }
+      .header__logo-box--name .link:active {
+        color: #666666; }
   .header__nav--item {
     color: #000; }
     .header__nav--item:hover {
@@ -133,88 +141,84 @@ body {
     .footer__nav--item .nav-link {
       color: inherit; }
 
-.title {
+.about .title {
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 2.5rem;
   text-indent: 2.5rem;
   margin-top: 12rem; }
 
-.sub-title {
+.about .sub-title {
   font-size: 3rem;
   letter-spacing: .3rem;
   text-indent: .3rem;
   margin-top: 1rem; }
 
-.title, .sub-title {
+.about .title, .about .sub-title {
   color: #eee;
   text-align: center;
   text-shadow: 0 0 5px #090909;
   text-transform: uppercase; }
 
-.video {
+.about .video {
   background-color: #696666;
   background: linear-gradient(to right, #d5d5d5, #555, #000, #555, #d5d5d5);
   margin: 2rem 0;
   width: 100%; }
-  .video__content {
+  .about .video__content {
     display: block;
     margin: 0 auto;
     width: 70%; }
 
-.form {
+.about .form {
   font-size: 2.5rem;
   width: 60%;
   margin: 3rem auto; }
-  .form-field {
+  .about .form-field {
     display: flex; }
-    .form-field__email, .form-field__btn {
+    .about .form-field__email, .about .form-field__btn {
       flex: 1;
       font-size: inherit;
       padding: 5px; }
-    .form-field__btn {
+    .about .form-field__btn {
       background-color: #4d4d4f;
       border: 2px solid #4d4d4f;
       box-shadow: 0 0 10px #d5d5d5;
       color: #eee;
       margin-top: 2rem;
       transition: all .2s; }
-      .form-field__btn > span {
+      .about .form-field__btn > span {
         font-size: inherit; }
-      .form-field__btn > span:nth-child(2) {
+      .about .form-field__btn > span:nth-child(2) {
         margin-left: 1rem; }
-      .form-field__btn:focus {
+      .about .form-field__btn:focus {
         transform: translateY(2px);
         outline: none; }
-      .form-field__btn:hover {
+      .about .form-field__btn:hover {
         background-color: #424040;
         border: 2px solid #424040; }
-    .form-field__email {
+    .about .form-field__email {
       border: 3px solid #4f4d4d;
       border-radius: 0 10px 10px 0;
       padding-left: 2rem; }
-      .form-field__email:hover::placeholder {
+      .about .form-field__email:hover::placeholder {
         color: #9c9999; }
-      .form-field__email:focus {
+      .about .form-field__email:focus {
         outline: none; }
-    .form-field .label-for-email {
+    .about .form-field .label-for-email {
       background-color: #4d4d4f;
       border-radius: 10px 0 0 10px;
       color: #eee;
       padding: 5px 2rem;
       display: flex; }
-      .form-field .label-for-email::before {
+      .about .form-field .label-for-email::before {
         color: inherit;
         font-size: inherit;
         margin: auto; }
 
-.about,
 .features,
 .pricing {
   height: 300px; }
-
-.about {
-  background-color: orange; }
 
 .features {
   background-color: blue; }
