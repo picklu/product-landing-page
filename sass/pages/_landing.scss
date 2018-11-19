@@ -1,113 +1,114 @@
 .about {
+
     .title {
     font-size: 6rem;
     font-weight: 700;
     letter-spacing: 2.5rem;
     text-indent: 2.5rem;
     margin-top: 12rem;
-}
-
-.sub-title {
-    font-size: 3rem;
-    letter-spacing: .3rem;
-    text-indent: .3rem;
-    margin-top: 1rem;
-}
-
-.title, .sub-title {
-    color: $color-white;
-    text-align: center;
-    text-shadow: 0 0 5px darken($color-grey, 30);
-    text-transform: uppercase;
-}
-
-.video {
-    background-color: darken($color-redish-grey, 20);
-    background: linear-gradient(to right, darken($color-white, 10), $color-grey, $color-black, $color-grey, darken($color-white, 10));
-    margin: 2rem 0;
-    width: 100%;
-
-    &__content {
-        display: block;
-        margin: 0 auto;
-        width: 70%;
     }
-}
 
-.form {
-    font-size: 2.5rem;
-    width: 60%;
-    margin: 3rem auto;
+    .sub-title {
+        font-size: 3rem;
+        letter-spacing: .3rem;
+        text-indent: .3rem;
+        margin-top: 1rem;
+    }
 
-    &-field {
-        display: flex;
+    .title, .sub-title {
+        color: $color-white;
+        text-align: center;
+        text-shadow: 0 0 5px darken($color-grey, 30);
+        text-transform: uppercase;
+    }
 
-        &__email,
-        &__btn {
-            flex: 1;
-            font-size: inherit;
-            padding: 5px;
+    .video {
+        background-color: darken($color-redish-grey, 20);
+        background: linear-gradient(to right, darken($color-white, 10), $color-grey, $color-black, $color-grey, darken($color-white, 10));
+        margin: 2rem 0;
+        width: 100%;
+
+        &__content {
+            display: block;
+            margin: 0 auto;
+            width: 70%;
         }
+    }
 
-        &__btn {
-            background-color: darken($color-bluish-grey, 30);
-            border: 2px solid darken($color-bluish-grey, 30);
-            box-shadow: 0 0 10px darken($color-white, 10);
-            color: $color-white;
-            margin-top: 2rem;
-            transition: all .2s;
+    .form {
+        font-size: 2.5rem;
+        width: 60%;
+        margin: 3rem auto;
 
-            & > span {
+        &-field {
+            display: flex;
+
+            &__email,
+            &__btn {
+                flex: 1;
                 font-size: inherit;
+                padding: 5px;
             }
 
-            & > span:nth-child(2) {
-                margin-left: 1rem;
-            }
+            &__btn {
+                background-color: darken($color-bluish-grey, 30);
+                border: 2px solid darken($color-bluish-grey, 30);
+                box-shadow: 0 0 10px darken($color-white, 10);
+                color: $color-white;
+                margin-top: 2rem;
+                transition: all .2s;
 
-            &:focus {
-                transform: translateY(2px);
-                outline: none;
-            }
+                & > span {
+                    font-size: inherit;
+                }
 
-            &:hover {
-                background-color: darken($color-redish-grey, 35);
-                border: 2px solid darken($color-redish-grey, 35);
-            }
-        }
+                & > span:nth-child(2) {
+                    margin-left: 1rem;
+                }
 
-        &__email {
-            border: 3px solid darken($color-redish-grey, 30);
-            border-radius: 0 10px 10px 0;
-            padding-left: 2rem;
+                &:focus {
+                    transform: translateY(2px);
+                    outline: none;
+                }
 
-            &:hover {
-
-                &::placeholder {
-                    color: $color-redish-grey;
+                &:hover {
+                    background-color: darken($color-redish-grey, 35);
+                    border: 2px solid darken($color-redish-grey, 35);
                 }
             }
 
-            &:focus {
-                outline: none;
+            &__email {
+                border: 3px solid darken($color-redish-grey, 30);
+                border-radius: 0 10px 10px 0;
+                padding-left: 2rem;
+
+                &:hover {
+
+                    &::placeholder {
+                        color: $color-redish-grey;
+                    }
+                }
+
+                &:focus {
+                    outline: none;
+                }
             }
-        }
 
-        .label-for-email {
-            background-color: darken($color-bluish-grey, 30);
-            border-radius: 10px 0 0 10px;
-            color: $color-white;
-            padding: 5px 2rem;
-            display: flex;
+            .label-for-email {
+                background-color: darken($color-bluish-grey, 30);
+                border-radius: 10px 0 0 10px;
+                color: $color-white;
+                padding: 5px 2rem;
+                display: flex;
 
-            &::before {
-                color: inherit;
-                font-size: inherit;
-                margin: auto;
+                &::before {
+                    color: inherit;
+                    font-size: inherit;
+                    margin: auto;
+                }
             }
         }
     }
-}
 }
 
 
