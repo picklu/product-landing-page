@@ -111,17 +111,37 @@
     }
 }
 
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
 
-.features,
+    &__redishgrey,
+    &__greenishgrey,
+    &__bluishgrey {
+        background-color: bisque;
+        border: 2px solid red;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+
+        .feature-title {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .feature {
+            background-color: #1100ff;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
 .pricing {
     height: 300px;
-}
-
-
-.features {
-    background-color: blue;
-}
-
-.pricing {
     background-color: aqua;
 }
+

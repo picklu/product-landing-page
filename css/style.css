@@ -216,12 +216,26 @@ body {
         font-size: inherit;
         margin: auto; }
 
-.features,
-.pricing {
-  height: 300px; }
-
 .features {
-  background-color: blue; }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh; }
+  .features__redishgrey, .features__greenishgrey, .features__bluishgrey {
+    background-color: bisque;
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column; }
+    .features__redishgrey .feature-title, .features__greenishgrey .feature-title, .features__bluishgrey .feature-title {
+      text-align: center;
+      text-transform: uppercase; }
+    .features__redishgrey .feature, .features__greenishgrey .feature, .features__bluishgrey .feature {
+      background-color: #1100ff;
+      height: 100%;
+      width: 100%; }
 
 .pricing {
+  height: 300px;
   background-color: aqua; }
