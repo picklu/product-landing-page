@@ -1,6 +1,6 @@
 body {
     background-color: $color-grey;
-    background: linear-gradient(to bottom, lighten($color-grey, 30), darken($color-grey, 30));
+    background: linear-gradient(to bottom, lighten($color-grey, 30), $color-grey, darken($color-grey, 30));
 }
 
 .main {
