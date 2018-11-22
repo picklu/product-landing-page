@@ -1,0 +1,74 @@
+.form {
+    font-size: 2.5rem;
+    width: 60%;
+    margin: 3rem auto;
+
+    &-field {
+        display: flex;
+
+        &__email,
+        &__btn {
+            flex: 1;
+            font-size: inherit;
+            padding: 5px;
+        }
+
+        &__btn {
+            background-color: darken($color-bluish-grey, 30);
+            border: 2px solid darken($color-bluish-grey, 30);
+            box-shadow: 0 0 10px darken($color-white, 10);
+            color: $color-white;
+            margin-top: 2rem;
+            transition: all .2s;
+
+            & > span {
+                font-size: inherit;
+            }
+
+            & > span:nth-child(2) {
+                margin-left: 1rem;
+            }
+
+            &:focus {
+                transform: translateY(2px);
+                outline: none;
+            }
+
+            &:hover {
+                background-color: darken($color-redish-grey, 35);
+                border: 2px solid darken($color-redish-grey, 35);
+            }
+        }
+
+        &__email {
+            border: 3px solid darken($color-redish-grey, 30);
+            border-radius: 0 10px 10px 0;
+            padding-left: 2rem;
+
+            &:hover {
+
+                &::placeholder {
+                    color: $color-redish-grey;
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .label-for-email {
+            background-color: darken($color-bluish-grey, 30);
+            border-radius: 10px 0 0 10px;
+            color: $color-white;
+            padding: 5px 2rem;
+            display: flex;
+
+            &::before {
+                color: inherit;
+                font-size: inherit;
+                margin: auto;
+            }
+        }
+    }
+}

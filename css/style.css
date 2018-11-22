@@ -41,7 +41,6 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #d5d5d5;
   box-sizing: border-box;
   font-weight: 400; }
 
@@ -73,14 +72,18 @@ body {
 .logo {
   display: block; }
 
+body {
+  background-color: #868686;
+  background: linear-gradient(to bottom, lightgray, #3a3a3a); }
+
 .main {
   margin-left: auto;
   margin-right: auto;
   width: 80%; }
 
 .header {
-  background-color: #9c9999;
-  box-shadow: 0 2px 5px #4f4d4d;
+  background-color: #868686;
+  box-shadow: 0 2px 5px #443d3d;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -116,6 +119,52 @@ body {
       color: #eee; }
     .header__nav--item .nav-link {
       color: inherit; }
+
+.form {
+  font-size: 2.5rem;
+  width: 60%;
+  margin: 3rem auto; }
+  .form-field {
+    display: flex; }
+    .form-field__email, .form-field__btn {
+      flex: 1;
+      font-size: inherit;
+      padding: 5px; }
+    .form-field__btn {
+      background-color: #3d3d44;
+      border: 2px solid #3d3d44;
+      box-shadow: 0 0 10px #d5d5d5;
+      color: #eee;
+      margin-top: 2rem;
+      transition: all .2s; }
+      .form-field__btn > span {
+        font-size: inherit; }
+      .form-field__btn > span:nth-child(2) {
+        margin-left: 1rem; }
+      .form-field__btn:focus {
+        transform: translateY(2px);
+        outline: none; }
+      .form-field__btn:hover {
+        background-color: #373131;
+        border: 2px solid #373131; }
+    .form-field__email {
+      border: 3px solid #443d3d;
+      border-radius: 0 10px 10px 0;
+      padding-left: 2rem; }
+      .form-field__email:hover::placeholder {
+        color: #948686; }
+      .form-field__email:focus {
+        outline: none; }
+    .form-field .label-for-email {
+      background-color: #3d3d44;
+      border-radius: 10px 0 0 10px;
+      color: #eee;
+      padding: 5px 2rem;
+      display: flex; }
+      .form-field .label-for-email::before {
+        color: inherit;
+        font-size: inherit;
+        margin: auto; }
 
 .footer {
   background-color: #000;
@@ -157,12 +206,12 @@ body {
 .about .title, .about .sub-title {
   color: #eee;
   text-align: center;
-  text-shadow: 0 0 5px #090909;
+  text-shadow: 0 0 5px #000;
   text-transform: uppercase; }
 
 .about .video {
-  background-color: #696666;
-  background: linear-gradient(to right, #d5d5d5, #555, #000, #555, #d5d5d5);
+  background-color: #605454;
+  background: linear-gradient(to right, #a0a0a0, #000, #a0a0a0);
   margin: 2rem 0;
   width: 100%; }
   .about .video__content {
@@ -170,71 +219,41 @@ body {
     margin: 0 auto;
     width: 70%; }
 
-.about .form {
-  font-size: 2.5rem;
-  width: 60%;
-  margin: 3rem auto; }
-  .about .form-field {
-    display: flex; }
-    .about .form-field__email, .about .form-field__btn {
-      flex: 1;
-      font-size: inherit;
-      padding: 5px; }
-    .about .form-field__btn {
-      background-color: #4d4d4f;
-      border: 2px solid #4d4d4f;
-      box-shadow: 0 0 10px #d5d5d5;
-      color: #eee;
-      margin-top: 2rem;
-      transition: all .2s; }
-      .about .form-field__btn > span {
-        font-size: inherit; }
-      .about .form-field__btn > span:nth-child(2) {
-        margin-left: 1rem; }
-      .about .form-field__btn:focus {
-        transform: translateY(2px);
-        outline: none; }
-      .about .form-field__btn:hover {
-        background-color: #424040;
-        border: 2px solid #424040; }
-    .about .form-field__email {
-      border: 3px solid #4f4d4d;
-      border-radius: 0 10px 10px 0;
-      padding-left: 2rem; }
-      .about .form-field__email:hover::placeholder {
-        color: #9c9999; }
-      .about .form-field__email:focus {
-        outline: none; }
-    .about .form-field .label-for-email {
-      background-color: #4d4d4f;
-      border-radius: 10px 0 0 10px;
-      color: #eee;
-      padding: 5px 2rem;
-      display: flex; }
-      .about .form-field .label-for-email::before {
-        color: inherit;
-        font-size: inherit;
-        margin: auto; }
-
 .features {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 70vh; }
-  .features__redishgrey, .features__greenishgrey, .features__bluishgrey {
-    background-color: bisque;
-    border: 2px solid red;
+  height: 70vh;
+  margin: 5rem 0;
+  padding-top: 10rem; }
+  .features__redish-grey, .features__greenish-grey, .features__bluish-grey {
+    background-color: #868686;
+    border-radius: 5px;
+    box-shadow: 0 0 10x #000;
+    color: #eee;
+    text-shadow: 0 0 5px #000;
     height: 100%;
-    width: 100%;
+    max-width: 30%;
+    flex: 1;
     display: flex;
-    flex-flow: column; }
-    .features__redishgrey .feature-title, .features__greenishgrey .feature-title, .features__bluishgrey .feature-title {
+    flex-direction: column;
+    transition: transform .2s; }
+    .features__redish-grey:hover, .features__redish-grey:active, .features__greenish-grey:hover, .features__greenish-grey:active, .features__bluish-grey:hover, .features__bluish-grey:active {
+      transform: scale(1.05); }
+    .features__redish-grey .feature-title, .features__greenish-grey .feature-title, .features__bluish-grey .feature-title {
+      font-size: 2.5rem;
+      line-height: 2;
       text-align: center;
       text-transform: uppercase; }
-    .features__redishgrey .feature, .features__greenishgrey .feature, .features__bluishgrey .feature {
-      background-color: #1100ff;
+    .features__redish-grey .feature, .features__greenish-grey .feature, .features__bluish-grey .feature {
       height: 100%;
       width: 100%; }
+  .features__redish-grey {
+    background: linear-gradient(to right bottom, #948686, #0e0d0d); }
+  .features__greenish-grey {
+    background: linear-gradient(to right bottom, #869486, #0d0e0d); }
+  .features__bluish-grey {
+    background: linear-gradient(to right bottom, #868694, #0d0d0e); }
 
 .pricing {
   height: 300px;
