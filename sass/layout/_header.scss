@@ -26,18 +26,14 @@
             padding-left: 5px;
             text-transform: uppercase;
 
-            .nav-link {
-                &:link,
-                &:visited {
-                    color: $color-black; 
-                }
-            
+            .link {
+
                 &:hover {
-                    color: lighten($color-black, 30);
+                    color: lighten($color-black, 20);
                 }
 
                 &:active {
-                    color: lighten($color-black, 40);
+                    color: lighten($color-black, 30);
                 } 
             }
         }
@@ -51,10 +47,6 @@
             &:hover {
                 background-color: $color-black;
                 color: $color-white;
-            }
-
-            .nav-link {
-                color: inherit;
             }
         }
     }

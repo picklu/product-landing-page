@@ -11,10 +11,12 @@
         }
 
     &__features {
-        background-color: $color-grey;
-        display: inline-block;
-        font-size: 3.5rem;
-        margin: 2rem auto;        
-        width: 50%;
+        background-color: darken($color-grey, 30);
+        box-shadow: 0 0 5px $color-grey;
+        font-size: 3rem;
+        margin: 5rem auto;        
+        text-align: center;
+        text-shadow: 0 0 3px $color-black;
+        width: 70%;
     }
 }
