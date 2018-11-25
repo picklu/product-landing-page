@@ -15,28 +15,18 @@
 
         &__btn {
             background-color: darken($color-bluish-grey, 30);
-            border: 2px solid darken($color-bluish-grey, 30);
-            box-shadow: 0 0 10px darken($color-white, 10);
+            box-shadow: 0 0 5px $color-black;
             color: $color-white;
             margin-top: 2rem;
             transition: all .2s;
 
-            & > span {
-                font-size: inherit;
-            }
-
-            & > span:nth-child(2) {
-                margin-left: 1rem;
-            }
-
             &:focus {
                 transform: translateY(2px);
-                outline: none;
             }
 
             &:hover {
                 background-color: darken($color-redish-grey, 35);
-                border: 2px solid darken($color-redish-grey, 35);
+                box-shadow: 0 0 15px $color-redish-grey;
             }
         }
 

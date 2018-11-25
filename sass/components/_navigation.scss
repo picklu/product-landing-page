@@ -1,3 +1,13 @@
+.link {
+    &:link,
+    &:visited,
+    & > * {
+        color: inherit;
+        display: block;
+        text-decoration: none;
+    }
+}
+
 .nav {
     align-self: flex-end;
 

@@ -5,4 +5,16 @@
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
+
+    &:focus {
+            outline: none;
+        }
+
+    &__features {
+        background-color: $color-grey;
+        display: inline-block;
+        font-size: 3.5rem;
+        margin: 2rem auto;        
+        width: 50%;
+    }
 }

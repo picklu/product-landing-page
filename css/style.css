@@ -51,6 +51,20 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px; }
+  .btn:focus {
+    outline: none; }
+  .btn__features {
+    background-color: #868686;
+    display: inline-block;
+    font-size: 3.5rem;
+    margin: 2rem auto;
+    width: 50%; }
+
+.link:link, .link:visited,
+.link > * {
+  color: inherit;
+  display: block;
+  text-decoration: none; }
 
 .nav {
   align-self: flex-end; }
@@ -104,13 +118,11 @@ body {
       font-weight: 700;
       padding-left: 5px;
       text-transform: uppercase; }
-      .header__logo-box--name .link:link, .header__logo-box--name .link:visited {
-        color: #000;
-        display: inline-block;
-        text-decoration: none; }
-      .header__logo-box--name .link:hover {
+      .header__logo-box--name .nav-link:link, .header__logo-box--name .nav-link:visited {
+        color: #000; }
+      .header__logo-box--name .nav-link:hover {
         color: #4d4d4d; }
-      .header__logo-box--name .link:active {
+      .header__logo-box--name .nav-link:active {
         color: #666666; }
   .header__nav--item {
     color: #000; }
@@ -132,21 +144,15 @@ body {
       padding: 5px; }
     .form-field__btn {
       background-color: #3d3d44;
-      border: 2px solid #3d3d44;
-      box-shadow: 0 0 10px #d5d5d5;
+      box-shadow: 0 0 5px #000;
       color: #eee;
       margin-top: 2rem;
       transition: all .2s; }
-      .form-field__btn > span {
-        font-size: inherit; }
-      .form-field__btn > span:nth-child(2) {
-        margin-left: 1rem; }
       .form-field__btn:focus {
-        transform: translateY(2px);
-        outline: none; }
+        transform: translateY(2px); }
       .form-field__btn:hover {
         background-color: #373131;
-        border: 2px solid #373131; }
+        box-shadow: 0 0 15px #948686; }
     .form-field__email {
       border: 3px solid #443d3d;
       border-radius: 0 10px 10px 0;
@@ -221,6 +227,7 @@ body {
 
 .features {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 70vh;

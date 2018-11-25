@@ -15,9 +15,9 @@
         </div>
         <nav id="nav-bar" class="nav header__nav">
             <ul class="nav-list">
-                <li class="nav--item header__nav--item"><a href="#about" class="nav-link">about</a></li>
-                <li class="nav--item header__nav--item"><a href="#features" class="nav-link">features</a></li>
-                <li class="nav--item header__nav--item"><a href="#pricing" class="nav-link">pricing</a></li>
+                <li class="nav--item header__nav--item"><a href="#about" class="link nav-link">about</a></li>
+                <li class="nav--item header__nav--item"><a href="#features" class="link nav-link">features</a></li>
+                <li class="nav--item header__nav--item"><a href="#pricing" class="link nav-link">pricing</a></li>
             </ul>
         </nav>
     </header>
@@ -29,17 +29,10 @@
             <div class="video">
                 <!-- The video is from https://videos.pexels.com -->
                 <iframe id="video" class="video__content" width="560" height="315" src="https://www.youtube.com/embed/3qDTkoCB0ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
                 </iframe>
             </div>
-            <form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
-                <div class="form-field">
-                    <label for="email" class="label-for-email icon-envelop"></label>
-                    <input id="email" class="form-field__email" type="email" name="email" placeholder="email@example.com" required>
-                </div>      
-                <div class="form-field">
-                    <input type="submit" id="submit" class="btn form-field__btn" value="subscribe">
-                </div>
-            </form>
+
         </section><!-- end of about -->
 
         <section id="features" class="features"><!-- beginning of features -->
@@ -58,6 +51,16 @@
             <h2>Pricing</h2>
         </section><!-- end of pricing -->
 
+        <form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
+            <div class="form-field">
+                <label for="email" class="label-for-email icon-envelop"></label>
+                <input id="email" class="form-field__email" type="email" name="email" placeholder="email@example.com" required>
+            </div>      
+            <div class="form-field">
+                <input type="submit" id="submit" class="btn form-field__btn" value="subscribe">
+            </div>
+        </form>
+
     </main>
     
     <footer class="footer">
@@ -67,9 +70,9 @@
         <div class="footer__content-box">
             <nav class="nav footer__nav">
                 <ul class="nav-list">
-                    <li class="nav--item footer__nav--item"><a href="#about" class="nav-link">about</a></li>
-                    <li class="nav--item footer__nav--item"><a href="#features" class="nav-link">features</a></li>
-                    <li class="nav--item footer__nav--item"><a href="#pricing" class="nav-link">pricing</a></li>
+                    <li class="nav--item footer__nav--item"><a href="#about" class="link nav-link">about</a></li>
+                    <li class="nav--item footer__nav--item"><a href="#features" class="link nav-link">features</a></li>
+                    <li class="nav--item footer__nav--item"><a href="#pricing" class="link nav-link">pricing</a></li>
                 </ul>
             </nav>
             <small class="footer__copy">&copy; Greyvals 2018. Designed and develped by picklu with &hearts;</small>
