@@ -2,11 +2,11 @@
     color: $color-white;
 
     .title {
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 2.5rem;
-    text-indent: 2.5rem;
-    margin-top: 12rem;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 2.5rem;
+        text-indent: 2.5rem;
+        margin-top: 12rem;
     }
 
     .sub-title {
@@ -36,11 +36,11 @@
     }
 }
 
-.features {
+.features,
+.pricing {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     height: 70vh;
     margin: 5rem 0;
     padding-top: 10rem;
@@ -49,7 +49,6 @@
     &__greenish-grey,
     &__bluish-grey {
         background-color: $color-grey;
-        border-radius: 50%;
         box-shadow: 0 0 10x $color-black;
         color: $color-white;
         text-shadow: 0 0 5px $color-black;
@@ -57,22 +56,9 @@
         max-width: 30%;
         flex: 1;
         display: flex;
-
-        .feature-title {
-            font-size: 2.5rem;
-            margin: auto;
-            text-align: center;
-            text-transform: uppercase;
-            transition: transform .2s;
-
-        }
-
-        &:hover > .feature-title {
-            transform: skewY(35deg);
-        }
-    }
-
-    &__redish-grey {
+   }
+   
+   &__redish-grey {
         background: linear-gradient(to right bottom, $color-redish-grey, darken($color-redish-grey, 50));
     }
 
@@ -85,8 +71,47 @@
     }
 }
 
-.pricing {
-    height: 300px;
-    background-color: aqua;
+.features {
+    align-items: center;
+
+    &__redish-grey,
+    &__greenish-grey,
+    &__bluish-grey {
+        border-radius: $border-radius-circled;
+
+        .feature-title {
+            font-size: 2.5rem;
+            margin: auto;
+            text-align: center;
+            text-transform: uppercase;
+            transition: transform .2s;
+        }
+
+        &:hover > .feature-title {
+            transform: skewY(35deg);
+        }
+    }
 }
 
+.pricing {
+
+    &__redish-grey,
+    &__greenish-grey,
+    &__bluish-grey {
+        border-radius: $border-radius-squared;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .pricing-title {
+            font-size: 2.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            transition: transform .2s;
+        }
+        .pricing-items {
+            font-size: 2rem;
+            margin-top: 3rem;
+        }
+    }
+}
