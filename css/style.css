@@ -55,12 +55,29 @@ body {
     outline: none; }
   .btn__features {
     background-color: #3a3a3a;
-    box-shadow: 0 0 5px #868686;
+    box-shadow: 0 0 15px #000;
     font-size: 2.5rem;
     margin: 5rem auto;
+    padding: 5px;
     text-align: center;
     text-shadow: 0 0 3px #000;
-    width: 70%; }
+    width: 70%;
+    position: relative; }
+    .btn__features::before {
+      background-color: #868686;
+      border-radius: inherit;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .2s; }
+    .btn__features:hover::before {
+      box-shadow: 0 0 50px #000;
+      height: 100%;
+      width: 100%;
+      transform: scale(1.03, 1.5); }
 
 .nav-link:link, .nav-link:visited {
   color: inherit;
