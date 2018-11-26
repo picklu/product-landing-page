@@ -1,6 +1,6 @@
 .btn {
     border: none;
-    border-radius: 10px;
+    border-radius: $border-radius-squared;
     line-height: 1.5;
     text-transform: uppercase;
     font-weight: 600;
@@ -13,7 +13,7 @@
     &__features {
         background-color: darken($color-grey, 30);
         box-shadow: 0 0 5px $color-grey;
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 5rem auto;        
         text-align: center;
         text-shadow: 0 0 3px $color-black;

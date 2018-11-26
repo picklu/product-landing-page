@@ -46,7 +46,7 @@ body {
 
 .btn {
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   line-height: 1.5;
   text-transform: uppercase;
   font-weight: 600;
@@ -56,7 +56,7 @@ body {
   .btn__features {
     background-color: #3a3a3a;
     box-shadow: 0 0 5px #868686;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 5rem auto;
     text-align: center;
     text-shadow: 0 0 3px #000;
@@ -133,6 +133,10 @@ body {
   margin: 3rem auto; }
   .form-field {
     display: flex; }
+    .form-field:hover .form-field__email {
+      border-color: #373131; }
+      .form-field:hover .form-field__email--label {
+        background-color: #373131; }
     .form-field__email, .form-field__btn {
       flex: 1;
       font-size: inherit;
@@ -149,23 +153,25 @@ body {
         background-color: #373131;
         box-shadow: 0 0 15px #948686; }
     .form-field__email {
-      border: 3px solid #443d3d;
-      border-radius: 0 10px 10px 0;
+      border: 3px solid #3d3d44;
+      border-radius: 0 5px 5px 0;
       padding-left: 2rem; }
-      .form-field__email:hover::placeholder {
-        color: #948686; }
+      .form-field__email:hover {
+        border-color: #313137; }
+        .form-field__email:hover::placeholder {
+          color: #948686; }
       .form-field__email:focus {
         outline: none; }
-    .form-field .label-for-email {
-      background-color: #3d3d44;
-      border-radius: 10px 0 0 10px;
-      color: #eee;
-      padding: 5px 2rem;
-      display: flex; }
-      .form-field .label-for-email::before {
-        color: inherit;
-        font-size: inherit;
-        margin: auto; }
+      .form-field__email--label {
+        background-color: #3d3d44;
+        border-radius: 5px 0 0 5px;
+        color: #eee;
+        padding: 5px 2rem;
+        display: flex; }
+        .form-field__email--label::before {
+          color: inherit;
+          font-size: inherit;
+          margin: auto; }
 
 .footer {
   background-color: #000;

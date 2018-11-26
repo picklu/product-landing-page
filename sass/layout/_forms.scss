@@ -6,6 +6,14 @@
     &-field {
         display: flex;
 
+        &:hover &__email {
+            border-color: darken($color-redish-grey, 35);
+        
+            &--label {
+                background-color: darken($color-redish-grey, 35);
+            }
+        }
+
         &__email,
         &__btn {
             flex: 1;
@@ -31,11 +39,12 @@
         }
 
         &__email {
-            border: 3px solid darken($color-redish-grey, 30);
-            border-radius: 0 10px 10px 0;
+            border: 3px solid darken($color-bluish-grey, 30);
+            border-radius: 0 $border-radius-squared $border-radius-squared 0;
             padding-left: 2rem;
 
             &:hover {
+                border-color: darken($color-bluish-grey, 35);
 
                 &::placeholder {
                     color: $color-redish-grey;
@@ -45,19 +54,19 @@
             &:focus {
                 outline: none;
             }
-        }
+            
+            &--label {
+                background-color: darken($color-bluish-grey, 30);
+                border-radius: $border-radius-squared 0 0 $border-radius-squared;
+                color: $color-white;
+                padding: 5px 2rem;
+                display: flex;
 
-        .label-for-email {
-            background-color: darken($color-bluish-grey, 30);
-            border-radius: 10px 0 0 10px;
-            color: $color-white;
-            padding: 5px 2rem;
-            display: flex;
-
-            &::before {
-                color: inherit;
-                font-size: inherit;
-                margin: auto;
+                &::before {
+                    color: inherit;
+                    font-size: inherit;
+                    margin: auto;
+                }
             }
         }
     }
