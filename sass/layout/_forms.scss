@@ -7,10 +7,10 @@
         display: flex;
 
         &:hover &__email {
-            border-color: darken($color-redish-grey, 35);
+            border-color: darken($color-bluish-grey, 35);
         
             &--label {
-                background-color: darken($color-redish-grey, 35);
+                background-color: darken($color-bluish-grey, 35);
             }
         }
 
@@ -33,8 +33,8 @@
             }
 
             &:hover {
-                background-color: darken($color-redish-grey, 35);
-                box-shadow: 0 0 15px $color-redish-grey;
+                background-color: darken($color-bluish-grey, 35);
+                box-shadow: 0 0 15px $color-bluish-grey;
             }
         }
 
