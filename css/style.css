@@ -54,29 +54,31 @@ body {
   .btn:focus {
     outline: none; }
   .btn__features {
-    background-color: #3a3a3a;
-    box-shadow: 0 0 15px #000;
+    background-color: #464646;
+    background: linear-gradient(to right, #3a3a3a, #868686, #3a3a3a);
+    box-shadow: 0 0 5px #000;
     font-size: 2.5rem;
     margin: 5rem auto;
     padding: 5px;
     text-align: center;
-    text-shadow: 0 0 3px #000;
-    width: 70%;
+    text-shadow: 0 0 5px #000;
+    width: 50%;
     position: relative; }
     .btn__features::before {
       background-color: #868686;
       border-radius: inherit;
+      box-shadow: 0 0 30px #eee;
       content: "";
       display: block;
+      height: 100%;
+      width: 100%;
       position: absolute;
+      transform: scale(0);
       top: 0;
       left: 0;
       z-index: -1;
       transition: all .2s; }
     .btn__features:hover::before {
-      box-shadow: 0 0 50px #000;
-      height: 100%;
-      width: 100%;
       transform: scale(1.03, 1.5); }
 
 .nav-link:link, .nav-link:visited {
@@ -134,12 +136,15 @@ body {
       font-weight: 700;
       padding-left: 5px;
       text-transform: uppercase; }
-      .header__logo-box--name .link:hover {
-        color: #333333; }
-      .header__logo-box--name .link:active {
-        color: #4d4d4d; }
+      .header__logo-box--name .nav-link {
+        transition: all .2s; }
+        .header__logo-box--name .nav-link:hover {
+          color: #333333; }
+        .header__logo-box--name .nav-link:active {
+          color: #4d4d4d; }
   .header__nav--item {
-    color: #000; }
+    color: #000;
+    transition: all .2s; }
     .header__nav--item:hover {
       background-color: #000;
       color: #eee; }
@@ -207,12 +212,15 @@ body {
     display: flex;
     justify-content: space-between; }
   .footer__nav--item {
-    color: #eee; }
+    color: #eee;
+    transition: all .2s; }
     .footer__nav--item:hover {
       background-color: #eee;
       color: #222; }
     .footer__nav--item .nav-link {
       color: inherit; }
+  .footer__copy {
+    font-size: 2rem; }
 
 .about {
   color: #eee; }

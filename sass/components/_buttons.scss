@@ -12,14 +12,14 @@
 
     &__features {
         background-color: darken($color-grey, 25);
-        background: linear-gradient(to right, darken($color-grey, 30), lighten($color-grey, 5), darken($color-grey, 30));
+        background: linear-gradient(to right, darken($color-grey, 30), $color-grey, darken($color-grey, 30));
         box-shadow: 0 0 5px $color-black;
         font-size: 2.5rem;
         margin: 5rem auto;        
         padding: 5px;
         text-align: center;
         text-shadow: 0 0 5px $color-black;
-        width: 70%;
+        width: 50%;
         position: relative;
 
         &::before {
