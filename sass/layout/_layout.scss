@@ -18,8 +18,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    display: flex;
-    flex-direction: column;
 
     @include respond(tablet-port) {
         width: 100%;
