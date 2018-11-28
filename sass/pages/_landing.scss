@@ -1,12 +1,13 @@
 .about {
     color: $color-white;
+    margin: 5rem 0;
 
     .title {
         font-size: 6rem;
         font-weight: 700;
         letter-spacing: 2.5rem;
-        text-indent: 2.5rem;
         margin-top: 12rem;
+        text-indent: 2.5rem;
     }
 
     .sub-title {
@@ -39,11 +40,13 @@
 .features,
 .pricing {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    height: 70vh;
-    margin: 5rem 0;
-    padding-top: 10rem;
+    height: 50vh;
+    margin: 15rem 0 5rem 0;
+    
+    @include respond(phone) {
+        display: block;
+    }
 
     &__redish-grey,
     &__greenish-grey,
@@ -53,10 +56,18 @@
         color: $color-white;
         text-shadow: 0 0 5px $color-black;
         height: 100%;
-        max-width: 30%;
-        flex: 1;
+        width: 30%;
         display: flex;
-   }
+
+        @include respond(phone) {
+            display: block;
+            height: 80vw;
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
    
    &__redish-grey {
         background: linear-gradient(to right bottom, $color-redish-grey, darken($color-redish-grey, 50));
@@ -78,6 +89,10 @@
     &__greenish-grey,
     &__bluish-grey {
         border-radius: $border-radius-circled;
+
+        @include respond(phone) {
+            border-radius: $border-radius-squared;
+        }
 
         .feature-title {
             font-size: 2.5rem;
@@ -112,6 +127,7 @@
         .pricing-items {
             font-size: 2rem;
             margin-top: 3rem;
+            text-transform: uppercase;
         }
     }
 }

@@ -1,7 +1,12 @@
 .form {
     font-size: 2.5rem;
     width: 60%;
-    margin: 3rem auto;
+    margin: 2rem auto;
+
+    @include respond(phone) {
+        font-size: 2rem;
+        width: 100%;
+    }
 
     &-field {
         display: flex;
@@ -27,6 +32,7 @@
             color: $color-white;
             margin-top: 2rem;
             transition: all .2s;
+            flex: 1 1 auto;
 
             &:focus {
                 transform: translateY(2px);
@@ -41,7 +47,7 @@
         &__email {
             border: 3px solid darken($color-bluish-grey, 30);
             border-radius: 0 $border-radius-squared $border-radius-squared 0;
-            padding-left: 2rem;
+            text-align: center;
 
             &:hover {
                 border-color: darken($color-bluish-grey, 35);

@@ -6,6 +6,13 @@
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
+    width: 60%;
+
+    @include respond(phone) {
+        width: 100%;
+    }
+
+
 
     &:focus {
             outline: none;
@@ -19,7 +26,6 @@
         margin: 5rem auto;        
         padding: 15px;
         text-align: center;
-        width: 60%;
         position: relative;
 
         &::before {
