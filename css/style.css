@@ -295,6 +295,7 @@ body {
       width: 70%; }
       @media (max-width: 56.25em) {
         .about .video__content {
+          box-shadow: 0 0 5px #000;
           width: 100%; } }
 
 .features,
