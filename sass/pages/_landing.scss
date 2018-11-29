@@ -45,6 +45,10 @@
             display: block;
             margin: 0 auto;
             width: 70%;
+
+            @include respond(tablet-port) {
+                width: 100%;
+            }
         }
     }
 }

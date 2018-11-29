@@ -287,6 +287,9 @@ body {
       display: block;
       margin: 0 auto;
       width: 70%; }
+      @media (max-width: 56.25em) {
+        .about .video__content {
+          width: 100%; } }
 
 .features,
 .pricing {
