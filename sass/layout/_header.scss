@@ -16,8 +16,13 @@
         flex-wrap: wrap;
 
         &--img {
-            height: 86px;
-            width: 80px;
+            max-height: 86px;
+            max-width: 80px;
+
+            @include respond(phone) {
+                max-height: 53.75px;
+                max-width: 50px;
+            }
         }
 
         &--name {

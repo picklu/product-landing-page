@@ -8,7 +8,7 @@
     letter-spacing: 1px;
     width: 60%;
 
-    @include respond(phone) {
+    @include respond(tablet-port) {
         width: 100%;
     }
 
