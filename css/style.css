@@ -67,6 +67,12 @@ body {
     padding: 15px;
     text-align: center;
     position: relative; }
+    @media (max-width: 37.5em) {
+      .btn__features {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 5px; } }
     .btn__features::before {
       background-color: #868686;
       border-radius: 10px;
