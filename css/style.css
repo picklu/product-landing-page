@@ -297,7 +297,7 @@ body {
     .features,
     .pricing {
       display: block;
-      margin-top: 5rem; } }
+      margin: 2rem 0; } }
   .features__redish-grey, .features__greenish-grey, .features__bluish-grey,
   .pricing__redish-grey,
   .pricing__greenish-grey,
