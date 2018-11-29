@@ -38,7 +38,6 @@
         &::before {
             background-color: $color-grey;
             border-radius: $border-radius-squared * 2;
-            box-shadow: 0 0 30px $color-white;
             content: "";
             display: block;
             height: 100%;
@@ -53,7 +52,8 @@
         &:hover {
 
             &::before {
-                transform: scale(1.05, 1.5);
+                transform: scale(1.1, 1.5);
+                box-shadow: 0 0 30px $color-black;
             }
         }
     }

@@ -84,7 +84,6 @@ body {
     .btn__features::before {
       background-color: #868686;
       border-radius: 10px;
-      box-shadow: 0 0 30px #eee;
       content: "";
       display: block;
       height: 100%;
@@ -95,7 +94,8 @@ body {
       z-index: -1;
       transition: all .2s; }
     .btn__features:hover::before {
-      transform: scale(1.05, 1.5); }
+      transform: scale(1.1, 1.5);
+      box-shadow: 0 0 30px #000; }
 
 .nav-link:link, .nav-link:visited {
   color: inherit;
