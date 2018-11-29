@@ -8,10 +8,6 @@ html {
 body {
     background-color: $color-grey;
     background: linear-gradient(to bottom, lighten($color-grey, 30), $color-grey);
-
-    @include respond(tablet-port) {
-        font-weight: 300;
-    }
 }
 
 .main {

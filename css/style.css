@@ -119,9 +119,6 @@ body {
 body {
   background-color: #868686;
   background: linear-gradient(to bottom, lightgray, #868686); }
-  @media (max-width: 56.25em) {
-    body {
-      font-weight: 300; } }
 
 .main {
   margin-left: auto;
